@@ -1,0 +1,603 @@
+/*******************************************
+/* font-family: 'Montserrat', sans-serif; */
+/* Colors: #d8ebe4 #282846 #007580 #fed049 khaki */
+/*******************************************/
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007580;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+strong {
+  color: #007580;
+}
+
+.col {
+  margin-right: 70px;
+  text-align: justify;
+}
+
+/* Search */
+form input {
+  border: 1px solid #d8ebe4;
+  border-radius: 2px;
+  padding: 2px 5px;
+  transition: 1s;
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+form {
+  padding: 0 40px;
+}
+
+form input:focus {
+  background-color: #fed049;
+}
+
+input[placeholder] {
+  text-align: right;
+}
+
+.shrink {
+  animation-name: shrink;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes shrink {
+  from {
+    width: 400px;
+  }
+
+  to {
+    width: 100px;
+  }
+}
+
+.fa-searchengin {
+  font-size: large;
+  color: #007580;
+}
+/*#d8ebe4 #282846 #007580 #fed049*/
+
+/*Sidebar*/
+#mySidebar {
+  display: none;
+  width: 180px;
+  height: 100%;
+  padding: 10px 20px 5px 40px;
+  line-height: 1em;
+  text-align: left;
+  background-color: #d8ebe4;
+  position: fixed;
+  z-index: 1;
+}
+
+.socials {
+  padding: 100px 0;
+}
+
+header {
+  padding: 0 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d8ebe4;
+}
+
+.headingMain {
+  border-right: 1px solid #d8ebe4;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 0 27% 0 0;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  background-color: #fed049;
+  border-radius: 50%;
+}
+
+.sidebarAnimation {
+  animation-name: colorPulsate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorPulsate {
+  0% {
+    filter: drop-shadow(3px 3px #fed049);
+  }
+  50% {
+    filter: drop-shadow(3px 3px white);
+  }
+  100% {
+    filter: drop-shadow(3px 3px #fed049);
+  }
+}
+
+.sidebarToggle {
+  border: none;
+  background: none;
+}
+
+/* MAIN */
+main .topRow,
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 200px 0 200px;
+}
+
+/* Cards */
+.card {
+  border: 1px solid #007580;
+  box-sizing: border-box;
+  width: 210px;
+  height: 300px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px #fed049;
+}
+
+/* Card Background Images */
+.cardDrinkIt {
+  background-image: url("../images/wheretodrink.jpeg");
+  background-size: cover;
+  opacity: 0.8;
+  background-position-x: -110px;
+}
+
+.cardBuyIt {
+  background-image: url("../images/pay-jack-sparrow-4199585.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.cardMakeIt {
+  background-image: url("../images/spritz-charlotte-may-5947111.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.cardAboutTt {
+  background-image: url("../images/friends-elly-fairytale-4833957.jpg");
+  background-size: cover;
+  background-position-x: -60px;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.cardSubmitIt {
+  background-image: url("../images/eggnogg-charlotte-may-5947062.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.cardKickIt {
+  background-image: url("../images/kick-ketut-subiyanto-4473314.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.cardAbout {
+  background-image: url("../images/picnic-aline-viana-prado-3491680.jpg");
+  background-size: cover;
+}
+
+.cardSubmit {
+  background-image: url("../images/submit-gary-barnes-6231611.jpg");
+  background-size: cover;
+}
+
+.cardKick {
+  background-image: url("../images/kick-ketut-subiyanto-4473314.jpg");
+  background-size: cover;
+}
+
+.coffeespritz {
+  background-image: url("../images/coffeespritz.jpeg");
+  background-size: cover;
+  background-position-y: -10px;
+}
+
+.mulled-apple-juice {
+  background-image: url("../images/mulled-tijana-drndarski-3338676.jpg");
+  background-size: cover;
+}
+
+.cheatsginger {
+  background-image: url("../images/ginger-joris-neyt-1337585.jpg");
+  background-size: cover;
+  background-position-x: -10px;
+}
+
+.lyresImage {
+  background-image: url("../images/lyres.png");
+  background-size: cover;
+  background-position-x: -35px;
+}
+
+.brunswickAces {
+  background-image: url("../images/brunswickaces.png");
+  background-size: cover;
+  background-position-x: -35px;
+}
+
+.seedlip {
+  background-image: url("../images/seedlip.jpeg");
+  background-size: cover;
+  background-position-x: -20px;
+}
+
+.sobah {
+  background-image: url("../images/sobah.jpeg");
+  background-size: cover;
+  background-position-x: -15px;
+  background-position-y: -10px;
+}
+
+.heapsnormal {
+  background-image: url("../images/heapsnormal.png");
+  background-size: cover;
+  background-position-x: -25px;
+}
+
+.nort {
+  background-image: url("../images/nort.jpeg");
+  background-size: cover;
+  background-position-x: -45px;
+}
+
+.billabongred {
+  background-image: url("../images/billabongred.jpeg");
+  background-size: cover;
+}
+
+.tost {
+  background-image: url("../images/tost.jpeg");
+  background-size: cover;
+  background-position-x: -45px;
+}
+
+.maggiebeer {
+  background-image: url("../images/maggiebeer.png");
+  background-size: cover;
+  background-position-x: -20px;
+}
+
+.carwyncellars {
+  background-image: url("../images/carwyncellars.jpeg");
+  background-size: cover;
+  background-position-x: -100px;
+}
+
+.blackhearts {
+  background-image: url("../images/blackhearts.jpeg");
+  background-size: cover;
+  background-position-x: -20px;
+}
+
+.mrwest {
+  background-image: url("../images/mrwest.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Card Shapes */
+#circle {
+  width: 100px;
+  height: 100px;
+  background: #d8ebe4;
+  border-radius: 50%;
+}
+
+#square {
+  width: 100px;
+  height: 100px;
+  background: #d8ebe4;
+}
+
+#hexagon {
+  width: 100px;
+  height: 57.735px;
+  background: #d8ebe4;
+  position: relative;
+}
+#hexagon::before {
+  content: "";
+  position: absolute;
+  top: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 28.8675px solid #d8ebe4;
+}
+#hexagon::after {
+  content: "";
+  position: absolute;
+  bottom: -28.8675px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 28.8675px solid #d8ebe4;
+}
+
+#cut-diamond {
+  border-style: solid;
+  border-color: transparent transparent #d8ebe4 transparent;
+  border-width: 0 35px 35px 35px;
+  height: 0;
+  width: 60px;
+  box-sizing: content-box;
+  position: relative;
+  margin: 30px 0 60px 0;
+}
+#cut-diamond:after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: #d8ebe4 transparent transparent transparent;
+  border-width: 80px 65px 0 65px;
+}
+
+#shapeDiamond {
+  width: 0;
+  height: 0;
+  border: 60px solid transparent;
+  border-bottom-color: #d8ebe4;
+  position: relative;
+  top: -60px;
+}
+#shapeDiamond:after {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 60px;
+  width: 0;
+  height: 0;
+  border: 60px solid transparent;
+  border-top-color: #d8ebe4;
+}
+
+#shapeHeart {
+  position: relative;
+  width: 110px;
+  height: 100px;
+}
+#shapeHeart:before,
+#shapeHeart:after {
+  position: absolute;
+  content: "";
+  left: 60px;
+  top: 0;
+  width: 60px;
+  height: 90px;
+  background: #d8ebe4;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#shapeHeart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* Card Shape Flip */
+/*
+.flip-out-hor-top {
+  -webkit-animation: flip-out-hor-top 0.45s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: flip-out-hor-top 0.45s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes flip-out-hor-top {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    opacity: 0;
+  }
+}
+@keyframes flip-out-hor-top {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(70deg);
+    transform: rotateX(70deg);
+    opacity: 0;
+  }
+}
+*/
+
+/* Footer */
+footer p {
+  font-size: small;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 100px 0 50px 0;
+}
+
+/* subscription banner */
+.subscription {
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 50px 0 50px;
+  background-color: #fed049;
+  color: #007580;
+}
+
+.closeSubscription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 17px;
+}
+
+.scroll-left {
+  height: 50px;
+  overflow: hidden;
+}
+.scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll-left 25s linear infinite;
+  -webkit-animation: scroll-left 25s linear infinite;
+  animation: scroll-left 25s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes scroll-left {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+@keyframes scroll-left {
+  0% {
+    -moz-transform: translateX(100%); /* Browser bug fix */
+    -webkit-transform: translateX(100%); /* Browser bug fix */
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-100%); /* Browser bug fix */
+    -webkit-transform: translateX(-100%); /* Browser bug fix */
+    transform: translateX(-100%);
+  }
+}
+
+/* kick it css */
+
+.logo {
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+}
+
+.charityBlock {
+  margin-top: 40px;
+}
+
+/* search css */
+
+.searchFindingsBox {
+  border: 1px solid #007580;
+}
+
+/* brands/buy css */
+h4 {
+  text-align: center;
+  color: #007580;
+}
+
+.brandsNav {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+/* recipe pages */
+.notes {
+  font-size: small;
+}
+
+/* bar locations */
+.map {
+  height: 300px;
+  border: 1px solid #007580;
+}
+
+.barlocalcard {
+  font-size: 0.7em;
+  text-align: left;
+  display: block;
+  padding: 0 20px;
+}
+
+.barlocaltitle {
+  font-size: 1em;
+}
+
+.barsSml {
+  height: 100px;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}

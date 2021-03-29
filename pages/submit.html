@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTotal - Submit It</title>
+
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/7483e96227.js" crossorigin="anonymous"></script>
+
+    <!-- add icon link -->
+    <link rel="icon" href="https://img.icons8.com/ios/452/t.png" type="image/x-icon">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../src/styles.css">
+</head>
+
+<body>
+
+  <div id="mySidebar" class="mySidebar">
+    <!--collapsing side bar-->
+    <div>
+      <button onclick="myFunction()" class="sidebarToggle">
+        <h1>◄◄◄</h1>
+      </button>
+    </div>
+    <div>
+      <ul>
+        <li class="sidebar">
+          <a href="./pages/bar-locations.html" target="_blank">
+              <h5>DRINK IT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/brands.html" target="_blank">
+              <h5>BUY IT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/recipes.html" target="_blank">
+              <h5>MAKE IT</h5>
+          </a>
+        </li>
+      </ul>
+      <br />
+      <ul>
+        <li class="sidebar">
+          <a href="./pages/about.html" target="_blank">
+            <h5>ABOUT TT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/contact.html" target="_blank">
+            <h5>SUBMIT IT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/kickit.html" target="_blank">
+            <h5>KICK IT</h5>
+          </a>
+        </li>
+      </ul>
+      <ul class="socials">
+        <li class="sidebar">
+          <a href="https://facebook.com" target="_blank">
+            <h5>Facebook</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="https://instagram.com" target="_blank">
+            <h5>Instagram</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="https://twitter.com" target="_blank">
+            <h5>Twitter</h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--END collapsing side bar-->
+
+  <header id="header" class="header">
+    <div>
+      <button onclick="myFunction()" class="sidebarToggle">
+        <h1 class="sidebarAnimation">
+          ►►►
+        </h1>
+      </button>
+    </div>
+    <div class="headingMain">
+      <h1>
+        TTotal
+      </h1>
+    </div>
+      <h1>
+        Submit It
+      </h1>
+    <div>
+      <form class="form">
+        <input type="text" placeholder="Search" id="searchInput">
+        <label for="search-bar">
+          <button>
+              <i class="fab fa-searchengin"></i>
+          </button>
+        </label>
+      </form>
+    </div>
+  </header>
+  <!--END Header-->
+
+  <main>
+    <div class="row topRow">
+      <div class="col">
+        <h2>
+          Submit It
+        </h2>
+        <p>
+          It's time to take that amazing idea that's been stuck up in your noggin' and give it the chance it deserves - to be shared with the <strong>TTotal</strong> community!
+        </p>
+        <p>
+          <em>Share with us...</em>
+          <ul>
+            <li>New bars that accomodate zero alcohol beverages</li>
+            <li>That new receipe you made at home!</li>
+            <li>Are you a brand rep wanting to get your awesome zero bev to the world, share it here!</li>
+          </ul>
+        </p>
+        <div>
+        <form>
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your name...">
+
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name...">
+
+          <label for="suggest">Suggestion Box</label>
+          <p>Help keep us fresh, send us your ideas...</p>
+          <textarea id="suggestion" name="suggestion" 
+          rows="4"
+          cols="50"
+          placeholder="Start typing here..."></textarea></textarea>
+
+          <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+          <label for="subscribe">Subscribe</label>
+
+          <input type="submit" value="submit">
+
+        </form>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card cardSubmit">
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--END Main-->
+
+  <footer>
+    <p>
+      <a href="/" target="blank">
+        Open-source code </a> by <a href="https://www.linkedin.com/in/bella-leber-smeaton/" target="blank">
+        Bella Leber Smeaton </a> | <a href="mailto:leber.smeaton@yahoo.com" target="blank">
+        Contact + Feedback
+      </a> | <a href="#header"> Back to the top</a>
+    </p>
+  </footer>
+  <!--end footer-->
+
+  <script src="../src/script.js"></script>
+</body>
+
+</html>

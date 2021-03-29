@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TTotal - Bar Locations</title>
+
+  <!--Font Awesome Icons-->
+  <script src="https://kit.fontawesome.com/7483e96227.js" crossorigin="anonymous"></script>
+
+  <!-- add icon link -->
+  <link rel="icon" href="https://img.icons8.com/ios/452/t.png" type="image/x-icon">
+
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+
+<body>
+
+  <div id="mySidebar" class="mySidebar">
+    <!--collapsing side bar-->
+    <div>
+      <button onclick="myFunction()" class="sidebarToggle">
+        <h1>◄◄◄</h1>
+      </button>
+    </div>
+    <div>
+      <ul>
+        <li class="sidebar">
+          <a href="./pages/bar-locations.html" target="_blank">
+            <h5>DRINK IT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/brands.html" target="_blank">
+            <h5>BUY IT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/recipes.html" target="_blank">
+            <h5>MAKE IT</h5>
+          </a>
+        </li>
+      </ul>
+      <br />
+      <ul>
+        <li class="sidebar">
+          <a href="./pages/about.html" target="_blank">
+            <h5>ABOUT TT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/submit.html" target="_blank">
+            <h5>SUBMIT IT</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="./pages/kickit.html" target="_blank">
+            <h5>KICK IT</h5>
+          </a>
+        </li>
+      </ul>
+      <ul class="socials">
+        <li class="sidebar">
+          <a href="https://facebook.com" target="_blank">
+            <h5>Facebook</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="https://instagram.com" target="_blank">
+            <h5>Instagram</h5>
+          </a>
+        </li>
+        <li class="sidebar">
+          <a href="https://twitter.com" target="_blank">
+            <h5>Twitter</h5>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--END collapsing side bar-->
+
+  <header id="header" class="header">
+    <div>
+      <button onclick="myFunction()" class="sidebarToggle">
+        <h1 class="sidebarAnimation">►►►</h1>
+      </button>
+    </div>
+    <div class="headingMain">
+      <h1>
+        TTotal
+      </h1>
+    </div>
+      <h1>
+        Drink It
+      </h1>
+    <div>
+      <form class="form">
+        <input type="text" placeholder="Search" id="searchInput">
+        <label for="search-bar"><button><i class="fab fa-searchengin"></i></button></label>
+      </form>
+    </div>
+  </header>
+  <!--END Header-->
+
+  <main>
+    <div class="row topRow">
+      <div class="col">
+        <h3>
+          Where to 'drink'?
+        </h3>
+        <p>
+          We've compiled a selection of bars in the North, South and West to make <strong>your local</strong>. All these venues offer tasty low or alcohol free alternatives to a soda and lime or the tasty but overdone... <em>lemon, lime and bitters</em>.
+        </p>
+        <p>
+          If we're missing your venue, or you're a punter who wants to add a venue to the list please check out our <a href="./submit.html">submit page</a> and tell us all about it!
+        </p>
+        <div class="map">
+        </div>
+      </div>
+      <!--END main column-->
+
+      <div class="col-4">
+        <div class="card cardDrinkIt">
+          <div id="hexagon">
+            <h3 class="cardTitle">Drink It</h3>
+          </div>
+        </div>
+      </div>
+      <!--END buy it-->
+    </div>
+    <!--END Main row-->
+
+    <div class="row bottomRow">
+      <h3>North</h3>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Black Pearl</h4>
+          <img class="barsSml" src="../images/blackpearlsml.jpeg" alt="inside the empty black pearl">
+          <ul>
+            <li><strong>Address: </strong> 304 Brunswick St, Fitzroy</li>
+            <li><strong>Hours:</strong>Wed-Sun, 5pm-2am</li>
+            <li><strong>?</strong> Arguably the best bartenders in Melbourne, crafting special drinks just for you.</li>
+            <li><a href="https://www.blackpearlbar.com.au/">blackpearlbar.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Brunswick Aces</h4>
+          <ul>
+            <img class="barsSml" src="../images/brunswickasml.jpeg" alt="front facade of brunswick aces blue building.">
+            <ul>
+              <li><strong>Address: </strong> 124 Weston St, Brunswick East</li>
+              <li><strong>Hours:</strong>Opens April 2021</li>
+              <li><strong>?</strong> Australia's first no alcohol bar! Started by alcohol-free spirit company by the same name, Brunswick Aces.</li>
+              <li><a href="https://brunswickaces.com/">brunswickaces.com</a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Welcome to Thornbury</h4>
+          <img class="barsSml" src="../images/welcometothornbury.jpeg" alt="people enjoying the outdoors at welcome to thornbury">
+          <ul>
+            <li><strong>Address: </strong> 520 High St, Northcote</li>
+            <li><strong>Hours:</strong>Wed-Fri, 5pm-Late | Sat-Sun, 12pm-Late.</li>
+            <li><strong>?</strong> Super relaxed vibes at this food truck park and bar. A selection of colourful mocktails available.</li>
+            <li><a href="https://www.welcometothornbury.com/">welcometothornbury.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--END beer row-->
+
+    <div class="row bottomRow">
+      <h3>South</h3>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Tokyo Tina</h4>
+          <img class="barsSml" src="../images/tokyotinasml.jpeg" alt="street view of tokyo tina">
+          <ul>
+            <li><strong>Address: </strong> 66A Chapel St, Windsor</li>
+            <li><strong>Hours:</strong>Mon-Thu, 5pm-10pm | Fri-Sun, 12pm-11pm</li>
+            <li><strong>?</strong> Mocktails combining honey water with yuzu and cucumber juice. The perfect balance of sweet and sour.</li>
+            <li><a href="https://tokyotina.com.au/">tokyotina.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Lume</h4>
+          <img class="barsSml" src="../images/lumesml.jpeg" alt="looking down the bar of lume restaurant">
+          <ul>
+            <li><strong>Address: </strong> 226 Coventry St, Sth Melbourne</li>
+            <li><strong>Hours:</strong>Wed-Sat, 5pm-12am</li>
+            <li><strong>?</strong> Highlights include Consider the Kernel: cinnamon, walnut and vanilla, and Up the Range: mango, coconut and ginger.</li>
+            <li><a href="https://www.restaurantlume.com.au/">restaurantlume.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Captain Baxter</h4>
+          <img class="barsSml" src="../images/captainbaxtersml.jpeg" alt="overlooking the rooftop and stkila beach from captain baxters">
+          <ul>
+            <li><strong>Address: </strong> 10-18 Jacka Bvd, St Kilda</li>
+            <li><strong>Hours:</strong>Thu-Fri, 5pm-10pm | Sat-Sun, 12pm-12am</li>
+            <li><strong>?</strong> $7.50 mocktails overlooking the beach? Yes please!</li>
+            <li><a href="https://www.captainbaxter.com.au/">captainbaxter.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--END wine row-->
+
+    <div class="row bottomRow">
+      <h3>CBD</h3>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Beneath Driver Lane</h4>
+          <img class="barsSml" src="../images/beneathdriverlanesml.jpeg" alt="inside the basement of beneath drivers lane">
+          <ul>
+            <li><strong>Address: </strong> Basement/3 Driver Ln, Melbourne</li>
+            <li><strong>Hours:</strong>Tue-Sat, 4pm-1am</li>
+            <li><strong>?</strong> Whilst BDL is allll about alcohol, they also have amazing knowledge and can whip up anything but a soda and lime.</li>
+            <li><a href="https://www.driverlanebar.com/">driverlanebar.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Madame Brussels</h4>
+          <img class="barsSml" src="../images/madamebrusselssml.jpeg" alt="rooftop photo of madame brussels">
+          <ul>
+            <li><strong>Address: </strong> 3/59 Bourke St, Melbourne</li>
+            <li><strong>Hours:</strong>Wed-Sun, 3pm-11am</li>
+            <li><strong>?</strong> One of the best and original rooftop bars in Melbourne! A rather fancy garden party with a variety of no alcohol bevs.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card barlocalcard">
+          <h4 class="barlocaltitle">Whiteheart Bar</h4>
+          <img class="barsSml" src="../images/whitehartsml.jpeg" alt="outdoor photo of whiteheart bar">
+          <ul>
+            <li><strong>Address: </strong> 22 Whitehart Ln, Melbourne</li>
+            <li><strong>Hours:</strong>Mon-Sun, 12pm-1am</li>
+            <li><strong>?</strong> Two-storey bar fashioned out of shipping containers built on a converted car park, perfect in all weathers.</li>
+            <li><a href="https://www.whitehartbar.com.au/">whitehartbar.com.au</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--END spirit row-->
+
+  </main>
+  <!--END Main Cards-->
+
+  <footer>
+    <p>
+      <a href="/" target="blank">
+        Open-source code </a> by <a href="https://www.linkedin.com/in/bella-leber-smeaton/" target="blank">
+        Bella Leber Smeaton </a> | <a href="mailto:leber.smeaton@yahoo.com" target="blank">
+        Contact + Feedback
+      </a> | <a href="#header"> Back to the top</a>
+    </p>
+  </footer>
+  <!--end footer-->
+
+  <script src="../src/script.js"></script>
+</body>
+
+</html>
