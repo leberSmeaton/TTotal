@@ -27,8 +27,14 @@ searchInput.addEventListener('click', function () {
 
 
 // Google Map
+
+const labels = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
+
+let labelIndex = 0;
+
+
 function initMap() {
-  const blackPearl = { lat: -37.797, lng: 144.978 }; 
+  const blackPearl = { lat: -37.797, lng: 144.978 };
 
   const brunswickAces = { lat: -37.775, lng: 144.971 };
 
@@ -46,17 +52,17 @@ function initMap() {
 
   const whiteheartBar = { lat: -37.812, lng: 144.961 };
 
+  const babySnakes = { lat: -37.799, lng: 144.899 };
+
+  const grazeland = { lat: -37.829, lng: 144.893 };
+
+  const sebastian = { lat: -37.866, lng: 144.893 };
+
   /* main map element */
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 11,
     center: blackPearl,
-  });
-  
-  new google.maps.Marker({
-    position: blackPearl,
-    map,
-    title: "Black Pearl",
-  });
+  });  
 
   new google.maps.Marker({
     position: brunswickAces,
@@ -68,7 +74,6 @@ function initMap() {
     position: welcomeToThornbury,
     map,
     title: "Welcome to Thornbury",
-    label: `Welcome to Thornbury`,
   });
 
   new google.maps.Marker({
@@ -106,5 +111,56 @@ function initMap() {
     map,
     title: "Whiteheart Bar",
   });
+
+  new google.maps.Marker({
+    position: babySnakes,
+    map,
+    title: "Baby Snakes Bar",
+  });
+
+  new google.maps.Marker({
+    position: grazeland,
+    map,
+    title: "Grazeland",
+  });
+
+  new google.maps.Marker({
+    position: sebastian,
+    map,
+    title: "Sebastian",
+  });
+
+  // This event listener calls addpopuplink() when the map is clicked.
+  /* 
+  google.maps.event.addListener(map, "click", (event) => {
+    addMarker(event.latLng, map);
+  }); 
+  */
+
+  // Add a marker at the center of the map.
+  addMarker(blackPearl, map);
+  addMarker(brunswickAces, map);
+  addMarker(welcomeToThornbury, map);
+  addMarker(tokyoTina, map);
+  addMarker(lume, map);
+  addMarker(captainBaxter, map);
+  addMarker(beneathDriverLane, map);
+  addMarker(madameBrussels, map);
+  addMarker(whiteheartBar, map);
+  addMarker(babySnakes, map);
+  addMarker(grazeland, map);
+  addMarker(sebastian, map);
 }
+
+  // Adds a marker to the map.
+  function addMarker(location, map) {
+  // Add the marker at the clicked location, and add the next-available label
+  // from the array of alphabetical characters.
+  new google.maps.Marker({
+    position: location,
+    label: labels[labelIndex++ % labels.length],
+    map: map,
+  });
+}
+
 // END Google Map

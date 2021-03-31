@@ -135,18 +135,23 @@
           <span><a href="#cbd">
               <h3>CBD</h3>
             </a></span>
+          <span><a href="#west">
+              <h3>West</h3>
+            </a></span>
         </nav>
+
+        <div id="map"></div>
+
       </div>
       <!--END main column-->
-
-      <div class="card" id="map"></div>
+      <div class="card cardDrinkIt"></div>
     </div>
     <!--END Main row-->
 
     <div class="row rowTopMaps">
       <h3 id="north">North</h3>
       <div class="card barlocalcard">
-        <h4 class="barlocaltitle">Black Pearl</h4>
+        <h4 id="blackPeal" class="barlocaltitle">Black Pearl</h4>
         <img class="barsSml" src="../images/blackpearlsml.jpeg" alt="inside the empty black pearl">
         <ul>
           <li><strong>Address: </strong> 304 Brunswick St, Fitzroy</li>
@@ -247,6 +252,43 @@
         </ul>
       </div>
     </div>
+
+    <div class="row">
+      <h3 id="west">West</h3>
+      <div class="card barlocalcard">
+        <h4 class="barlocaltitle">Baby Snakes</h4>
+        <img class="barsSml" src="../images/beneathdriverlanesml.jpeg" alt="inside baby snakes venue">
+        <ul>
+          <li><strong>Address: </strong>30 Chambers St, Footscray </li>
+          <li><strong>Hours: </strong>Wed-Fri: 3pm-1am, Sat-Sun: 1pm-1am</li>
+          <li><strong>?</strong> A ridiculously colourful stairwell – with bright pink walls, purple stairs and lime-green railing – leads up to Baby Snakes</li>
+          <li><a href="https://babysnakes.com.au/">babysnakes.com.au </a></li>
+        </ul>
+      </div>
+      <div class="card barlocalcard">
+        <h4 class="barlocaltitle">Grazeland</h4>
+        <img class="barsSml" src="../images/grazeland.jpeg" alt="night time food stalls">
+        <ul>
+          <li><strong>Address: </strong>Booker St, Spotswood</li>
+          <li><strong>Hours: </strong>Fri: 5-10pm, Sat-Sun: 12pm-10pm </li>
+          <li><strong>?</strong> A dedicated food precinct in Melb's inner west has everything. Perfect in catering everyones needs.</li>
+          <li><a href="https://www.grazeland.melbourne/">grazeland.melbourne</a></li>
+        </ul>
+      </div>
+      <div class="card barlocalcard">
+        <h4 class="barlocaltitle">Sebastian</h4>
+        <img class="barsSml" src="../images/sebastian.jpeg" alt="Sebastian outdoor area overlooking bay">
+        <ul>
+          <li><strong>Address: </strong>26 Esplanade, Williamstown </li>
+          <li><strong>Hours: </strong>Mon-Sat: 12-10pm, Sun: 12pm-6pm </li>
+          <li><strong>? </strong>Sweet and soothing, the Chamomile Cooler is the perfect tonic to take the edge off
+          cravings.</li>
+          <li><a href="https://sebastianbeachgrill.com
+          ">sebastianbeachgrill.com
+          </a></li>
+        </ul>
+      </div>
+    </div>
     <!--END CBD row-->
   </main>
   <!--END Main Cards-->
@@ -265,9 +307,10 @@
   <script src="../src/script.js"></script>
   
   <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-  <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsTHNujyryaNrfAK3lOGn-i7E9QAApC0w&callback=initMap">
-  </script>
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsTHNujyryaNrfAK3lOGn-i7E9QAApC0w&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
 </body>
 
 </html>

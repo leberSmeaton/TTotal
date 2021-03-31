@@ -609,10 +609,11 @@ h4 {
 .locationNav {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
-.brandsNav a:hover {
+.brandsNav,
+.locationNav a:hover {
   color: #fed049;
 }
 
@@ -666,9 +667,9 @@ input#submitItButton {
 
 /* bar locations */
 #map {
-  height: 300px;
-  width: 210px;
+  height: 100%;
   border: 1px solid #007580;
+  border-radius: 15px;
 }
 
 html,
@@ -676,6 +677,10 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.rowTopMaps {
+  margin-top: 200px;
 }
 
 .barlocalcard {
