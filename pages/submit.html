@@ -133,7 +133,7 @@
             <li>Are you a brand rep wanting to get your awesome zero bev to the world, share it here!</li>
           </ul>
         </p>
-        <form action="#" class="submitForm">
+        <form action="#" class="submitForm" name="submit-to-google-sheet">
 
           <label for="fname">First Name: </label>
           <input type="text" id="fname" name="fname" placeholder="Your name...">
@@ -154,7 +154,7 @@
           <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
           <label for="subscribe">Subscribe</label>
           <br />
-          <input type="submit" id="submitItButton" value="submit">
+          <button type="submit" id="submitItButton" value="submit">Send</button>
 
         </form>
       </div>
@@ -178,6 +178,23 @@
   <!--end footer-->
 
   <script src="../src/script.js"></script>
+
+  <!--form to google spreadsheet-->
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwBihyJAuuLqttG6ibhgqP7aObnnjDknKJXIDmSC-CvW15dHR7QAp5kyjKkfhCnH0vgOQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 
 </html>
