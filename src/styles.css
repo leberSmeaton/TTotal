@@ -13,6 +13,10 @@ a {
   color: #007580;
 }
 
+.mySidebar a:hover {
+  color: #fed049;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -26,6 +30,7 @@ strong {
 .col {
   margin-right: 70px;
   text-align: justify;
+  width: 70%;
 }
 
 /* Search */
@@ -150,8 +155,7 @@ button:hover {
 }
 
 /* MAIN */
-main .topRow,
-.bottomRow {
+main .row {
   display: flex;
   justify-content: space-between;
   padding: 100px 200px 0 200px;
@@ -159,6 +163,7 @@ main .topRow,
 
 /* Cards */
 .card {
+  margin: 10px 0;
   border: 1px solid #007580;
   box-sizing: border-box;
   width: 210px;
@@ -170,112 +175,148 @@ main .topRow,
   box-shadow: 5px 5px #fed049;
 }
 
+div .cardTitle,
+.cardTitleHigh,
+.cardTitleLow {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+div .cardTitle {
+  top: 25px;
+}
+
+div .cardTitleLow {
+  top: 40px;
+}
+
+div .cardTitleHigh {
+  top: 15px;
+}
+
 /* Card Background Images */
+.cardDrinkIt,
+.cardBuyIt,
+.cardMakeIt,
+.cardAboutTt,
+.cardSubmitIt,
+.cardKickIt,
+.cardAbout,
+.cardSubmit,
+.cardKick,
+.coffeespritz,
+.mulled-apple-juice,
+.cheatsginger,
+.lyresImage,
+.brunswickAces,
+.seedlip,
+.sobah,
+.heapsnormal,
+.nort,
+.billabongred,
+.tost,
+.maggiebeer,
+.carwyncellars,
+.blackhearts,
+.mrwest {
+  background-size: cover;
+}
+
+.cardDrinkIt,
+.cardBuyIt,
+.cardMakeIt,
+.cardAboutTt,
+.cardSubmitIt,
+.cardKickIt {
+  opacity: 0.9;
+}
+
 .cardDrinkIt {
   background-image: url("../images/wheretodrink.jpeg");
-  background-size: cover;
-  opacity: 0.8;
   background-position-x: -110px;
 }
 
 .cardBuyIt {
   background-image: url("../images/pay-jack-sparrow-4199585.jpg");
-  background-size: cover;
-  opacity: 0.8;
 }
 
 .cardMakeIt {
   background-image: url("../images/spritz-charlotte-may-5947111.jpg");
-  background-size: cover;
-  opacity: 0.8;
 }
 
 .cardAboutTt {
   background-image: url("../images/friends-elly-fairytale-4833957.jpg");
-  background-size: cover;
   background-position-x: -60px;
-  background-repeat: no-repeat;
-  opacity: 0.8;
 }
 
 .cardSubmitIt {
   background-image: url("../images/eggnogg-charlotte-may-5947062.jpg");
-  background-size: cover;
-  opacity: 0.8;
 }
 
 .cardKickIt {
   background-image: url("../images/kick-ketut-subiyanto-4473314.jpg");
-  background-size: cover;
-  opacity: 0.8;
 }
+
+/* end home page cards */
+/* start image cards */
 
 .cardAbout {
   background-image: url("../images/picnic-aline-viana-prado-3491680.jpg");
-  background-size: cover;
 }
 
 .cardSubmit {
   background-image: url("../images/submit-gary-barnes-6231611.jpg");
-  background-size: cover;
 }
 
 .cardKick {
   background-image: url("../images/kick-ketut-subiyanto-4473314.jpg");
-  background-size: cover;
 }
 
 .coffeespritz {
   background-image: url("../images/coffeespritz.jpeg");
-  background-size: cover;
-  background-position-y: -10px;
+  background-position-y: -9px;
 }
 
 .mulled-apple-juice {
   background-image: url("../images/mulled-tijana-drndarski-3338676.jpg");
-  background-size: cover;
 }
 
 .cheatsginger {
   background-image: url("../images/ginger-joris-neyt-1337585.jpg");
-  background-size: cover;
   background-position-x: -10px;
 }
 
 .lyresImage {
   background-image: url("../images/lyres.png");
-  background-size: cover;
-  background-position-x: -35px;
+  background-position-x: -42px;
 }
 
 .brunswickAces {
   background-image: url("../images/brunswickaces.png");
-  background-size: cover;
-  background-position-x: -35px;
+  background-position-x: -42px;
 }
 
 .seedlip {
   background-image: url("../images/seedlip.jpeg");
-  background-size: cover;
   background-position-x: -20px;
 }
 
 .sobah {
   background-image: url("../images/sobah.jpeg");
-  background-size: cover;
   background-position-x: -15px;
   background-position-y: -10px;
 }
 
 .heapsnormal {
   background-image: url("../images/heapsnormal.png");
-  background-size: cover;
   background-position-x: -25px;
 }
 
 .nort {
   background-image: url("../images/nort.jpeg");
-  background-size: cover;
   background-position-x: -45px;
 }
 
@@ -286,80 +327,75 @@ main .topRow,
 
 .tost {
   background-image: url("../images/tost.jpeg");
-  background-size: cover;
   background-position-x: -45px;
 }
 
 .maggiebeer {
   background-image: url("../images/maggiebeer.png");
-  background-size: cover;
   background-position-x: -20px;
 }
 
 .carwyncellars {
   background-image: url("../images/carwyncellars.jpeg");
-  background-size: cover;
   background-position-x: -100px;
 }
 
 .blackhearts {
   background-image: url("../images/blackhearts.jpeg");
-  background-size: cover;
   background-position-x: -20px;
 }
 
 .mrwest {
   background-image: url("../images/mrwest.jpeg");
-  background-size: cover;
   background-repeat: no-repeat;
 }
 
 /* Card Shapes */
 #circle {
-  width: 100px;
-  height: 100px;
-  background: #d8ebe4;
+  width: 110px;
+  height: 110px;
+  background: #fed049;
   border-radius: 50%;
 }
 
 #square {
   width: 100px;
   height: 100px;
-  background: #d8ebe4;
+  background: #fed049;
 }
 
 #hexagon {
-  width: 100px;
-  height: 57.735px;
-  background: #d8ebe4;
+  width: 120px;
+  height: 67.735px;
+  background: #fed049;
   position: relative;
 }
 #hexagon::before {
   content: "";
   position: absolute;
-  top: -28.8675px;
+  top: -38.8675px;
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 28.8675px solid #d8ebe4;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 38.8675px solid #fed049;
 }
 #hexagon::after {
   content: "";
   position: absolute;
-  bottom: -28.8675px;
+  bottom: -38.8675px;
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 28.8675px solid #d8ebe4;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 38.8675px solid #fed049;
 }
 
 #cut-diamond {
   border-style: solid;
-  border-color: transparent transparent #d8ebe4 transparent;
+  border-color: transparent transparent #fed049 transparent;
   border-width: 0 35px 35px 35px;
   height: 0;
   width: 60px;
@@ -375,33 +411,33 @@ main .topRow,
   width: 0;
   height: 0;
   border-style: solid;
-  border-color: #d8ebe4 transparent transparent transparent;
+  border-color: #fed049 transparent transparent transparent;
   border-width: 80px 65px 0 65px;
 }
 
 #shapeDiamond {
   width: 0;
   height: 0;
-  border: 60px solid transparent;
-  border-bottom-color: #d8ebe4;
+  border: 65px solid transparent;
+  border-bottom-color: #fed049;
   position: relative;
-  top: -60px;
+  top: -65px;
 }
 #shapeDiamond:after {
   content: "";
   position: absolute;
-  left: -60px;
-  top: 60px;
+  left: -65px;
+  top: 65px;
   width: 0;
   height: 0;
-  border: 60px solid transparent;
-  border-top-color: #d8ebe4;
+  border: 65px solid transparent;
+  border-top-color: #fed049;
 }
 
 #shapeHeart {
   position: relative;
-  width: 110px;
-  height: 100px;
+  width: 120px;
+  height: 110px;
 }
 #shapeHeart:before,
 #shapeHeart:after {
@@ -410,9 +446,9 @@ main .topRow,
   left: 60px;
   top: 0;
   width: 60px;
-  height: 90px;
-  background: #d8ebe4;
-  border-radius: 50px 50px 0 0;
+  height: 100px;
+  background: #fed049;
+  border-radius: 40px 40px 0 0;
   transform: rotate(-45deg);
   transform-origin: 0 100%;
 }
@@ -423,10 +459,10 @@ main .topRow,
 }
 
 /* Card Shape Flip */
-/*
-.flip-out-hor-top {
-  -webkit-animation: flip-out-hor-top 0.45s
-    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+.flip-out-hor-top:hover {
+  -webkit-animation: flip-out-hor-top 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
   animation: flip-out-hor-top 0.45s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
@@ -454,7 +490,6 @@ main .topRow,
     opacity: 0;
   }
 }
-*/
 
 /* Footer */
 footer p {
@@ -568,8 +603,12 @@ h4 {
 
 .brandsNav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 50px;
+}
+
+.brandsNav a:hover {
+  color: #fed049;
 }
 
 /* recipe pages */
@@ -584,14 +623,10 @@ h4 {
 }
 
 .barlocalcard {
-  font-size: 0.7em;
+  font-size: 0.8em;
   text-align: left;
   display: block;
   padding: 0 20px;
-}
-
-.barlocaltitle {
-  font-size: 1em;
 }
 
 .barsSml {
@@ -601,3 +636,25 @@ h4 {
   margin: 0 auto;
   padding-bottom: 10px;
 }
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* brand beer cards size*/
+.beer h4 {
+  width: 210px;
+}
+
+@media only screen and (max-width: 815px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/*@media screen and (max-width: 800px) {
+  .mySidebar {
+    flex-direction: column;
+  }
+}*/
