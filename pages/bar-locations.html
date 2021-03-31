@@ -18,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
   <link rel="stylesheet" href="../src/styles.css">
 </head>
 
@@ -122,17 +124,27 @@
         <p>
           If we're missing your venue, or you're a punter who wants to add a venue to the list please check out our <a href="./submit.html">submit page</a> and tell us all about it!
         </p>
-        <div class="map">
-        </div>
+
+        <nav class="locationNav">
+          <span><a href="#north">
+              <h3>North</h3>
+            </a></span>
+          <span><a href="#south">
+              <h3>South</h3>
+            </a></span>
+          <span><a href="#cbd">
+              <h3>CBD</h3>
+            </a></span>
+        </nav>
       </div>
       <!--END main column-->
 
-      <div class="card cardDrinkIt"></div>
+      <div class="card" id="map"></div>
     </div>
     <!--END Main row-->
 
-    <div class="row">
-      <h3>North</h3>
+    <div class="row rowTopMaps">
+      <h3 id="north">North</h3>
       <div class="card barlocalcard">
         <h4 class="barlocaltitle">Black Pearl</h4>
         <img class="barsSml" src="../images/blackpearlsml.jpeg" alt="inside the empty black pearl">
@@ -169,7 +181,7 @@
     <!--END North row-->
 
     <div class="row">
-      <h3>South</h3>
+      <h3  id="south">South</h3>
       <div class="card barlocalcard">
         <h4 class="barlocaltitle">Tokyo Tina</h4>
         <img class="barsSml" src="../images/tokyotinasml.jpeg" alt="street view of tokyo tina">
@@ -204,7 +216,7 @@
     <!--END South row-->
 
     <div class="row">
-      <h3>CBD</h3>
+      <h3 id="cbd">CBD</h3>
       <div class="card barlocalcard">
         <h4 class="barlocaltitle">Beneath Driver Lane</h4>
         <img class="barsSml" src="../images/beneathdriverlanesml.jpeg" alt="inside the basement of beneath drivers lane">
@@ -251,6 +263,11 @@
   <!--end footer-->
 
   <script src="../src/script.js"></script>
+  
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsTHNujyryaNrfAK3lOGn-i7E9QAApC0w&callback=initMap">
+  </script>
 </body>
 
 </html>

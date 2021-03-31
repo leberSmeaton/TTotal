@@ -2,6 +2,9 @@
 /* font-family: 'Montserrat', sans-serif; */
 /* Colors: #d8ebe4 #282846 #007580 #fed049 khaki */
 /*******************************************/
+* {
+  box-sizing: border-box;
+}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -34,7 +37,8 @@ strong {
 }
 
 /* Search */
-form input {
+/* for search <form class="formHeader"> */
+.formHeader input {
   border: 1px solid #d8ebe4;
   border-radius: 2px;
   padding: 2px 5px;
@@ -44,15 +48,15 @@ form input {
   animation-fill-mode: forwards;
 }
 
-form {
+.formHeader {
   padding: 0 40px;
 }
 
-form input:focus {
+.formHeader input:focus {
   background-color: #fed049;
 }
 
-input[placeholder] {
+.formHeader input[placeholder] {
   text-align: right;
 }
 
@@ -158,7 +162,7 @@ button:hover {
 main .row {
   display: flex;
   justify-content: space-between;
-  padding: 100px 200px 0 200px;
+  padding: 70px 200px 0 200px;
 }
 
 /* Cards */
@@ -601,7 +605,8 @@ h4 {
   color: #007580;
 }
 
-.brandsNav {
+.brandsNav,
+.locationNav {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
@@ -616,10 +621,61 @@ h4 {
   font-size: small;
 }
 
-/* bar locations */
-.map {
-  height: 300px;
+/* Submit it forms page */
+
+ul.submitBullets {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+form.submitForm {
+  margin: 20px 0;
   border: 1px solid #007580;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+}
+
+#fname,
+#lname,
+#email,
+#subscribe {
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+#fname,
+#lname,
+#email {
+  width: 50%;
+}
+
+#suggestion {
+  margin-top: 5px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+input#submitItButton {
+  margin-top: 10px;
+  padding: 5px 40px;
+  background: #d8ebe4;
+  border: 1px solid #007580;
+  border-radius: 2px;
+}
+
+/* bar locations */
+#map {
+  height: 300px;
+  width: 210px;
+  border: 1px solid #007580;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .barlocalcard {
