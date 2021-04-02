@@ -1,4 +1,6 @@
-// aside toggle
+// 
+////// aside toggle 
+//
 function myFunction() {
   var sidebar = document.getElementById("mySidebar");
   if (sidebar.style.display === "none") {
@@ -8,25 +10,30 @@ function myFunction() {
   }
 }
 
-// search bar
-var form = document.querySelector('form');
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+// 
+//////search bar
+//
 
-  var searchInput = document.querySelector('#searchInput');
-  searchInput.classList.add('shrink');
-  var searchName = searchInput.value;
-  console.log(searchName);
-});
+// var searchForm = document.querySelector('form');
+// searchForm.addEventListener('submit', function(event) {
+// event.preventDefault();
 
-var searchInput = document.querySelector('#searchInput')
-searchInput.addEventListener('click', function () {
-  searchInput.classList.remove('shrink')
-})
+// var searchInput = document.querySelector('#searchInput');
+// searchInput.classList.add('shrink');
+// var searchName = searchInput.value;
+// console.log(searchName);
+// });
+
+// var searchInput = document.querySelector('#searchInput')
+// searchInput.addEventListener('click', function () {
+//   searchInput.classList.remove('shrink')
+// })
+
 // END Search Bar
-
-
-// Google Map
+ 
+// 
+//////Google Map
+//
 
 const labels = "ABCDEFGHJKLMNOPQRSTUVWXYZ";
 

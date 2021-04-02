@@ -16,6 +16,15 @@ a {
   color: #007580;
 }
 
+.headingMain a {
+  text-decoration: none;
+  color: #1b2021;
+}
+
+h1 {
+  color: #1b2021;
+}
+
 .mySidebar a:hover {
   color: #fed049;
 }
@@ -34,6 +43,7 @@ strong {
   margin-right: 70px;
   text-align: justify;
   width: 70%;
+  margin-bottom: 50px;
 }
 
 /* Search */
@@ -106,7 +116,9 @@ strong {
 }
 
 .socials {
-  padding: 100px 0;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
 }
 
 header {
@@ -505,7 +517,8 @@ footer {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
-  margin: 100px 0 50px 0;
+  margin-top: 100px;
+  padding-bottom: 50px;
 }
 
 /* subscription banner */
@@ -657,12 +670,16 @@ form.submitForm {
   margin-bottom: 15px;
 }
 
-input#submitItButton {
+button#submitItButton {
   margin-top: 10px;
   padding: 5px 40px;
-  background: #d8ebe4;
+  background: #fed049;
   border: 1px solid #007580;
-  border-radius: 2px;
+  border-radius: 15px;
+}
+
+button#submitItButton:hover {
+  background: #d8ebe4;
 }
 
 /* bar locations */
@@ -684,7 +701,7 @@ body {
 }
 
 .barlocalcard {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   text-align: left;
   display: block;
   padding: 0 20px;
