@@ -138,11 +138,31 @@ function initMap() {
   });
 
   // This event listener calls addpopuplink() when the map is clicked.
-  /* 
-  google.maps.event.addListener(map, "click", (event) => {
-    addMarker(event.latLng, map);
+  
+  google.maps.event.addListener(label = [0], "click", (event) => {
+    document.getElementById("blackPearl");
   }); 
-  */
+
+  // google.maps.event.addListener(label = [2], "click", (event) => {
+  //   document.getElementById("welcomeToThornbury");
+  // }); 
+
+  // google.maps.event.addListener(labelIndex = [2], "click", (event) => {
+  //   document.getElementById("welcomeToThornbury");
+  // }); 
+
+  // google.maps.event.addListener([2], "click", (event) => {
+  //   document.getElementById("welcomeToThornbury");
+  // }); 
+
+  // google.maps.event.addListener(2, "click", (event) => {
+  //   document.getElementById("welcomeToThornbury");
+  // }); 
+
+  // google.maps.event.addListener(labelIndex = [2], "click", (event) => {
+  //   document.getElementById("welcomeToThornbury");
+  // }); 
+
 
   // Add a marker at the center of the map.
   addMarker(blackPearl, map);
