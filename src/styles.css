@@ -23,6 +23,7 @@ a {
 
 h1 {
   color: #1b2021;
+  transition: 2s;
 }
 
 .mySidebar a:hover {
@@ -46,8 +47,9 @@ strong {
   margin-bottom: 50px;
 }
 
-/* Search Engine */
-/* for search <form class="formHeader"> */
+/* 
+Search Engine 
+*/
 
 .formHeader input {
   border: 1px solid #d8ebe4;
@@ -57,11 +59,12 @@ strong {
 
 .formHeader {
   padding: 0 40px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-/* ---- testing css animated search ----- */
 .formHeader input[type="text"] {
-  width: 100px;
+  width: 80px;
   text-align: right;
   -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
@@ -79,7 +82,9 @@ strong {
 }
 /*#d8ebe4 #282846 #007580 #fed049*/
 
-/*Sidebar*/
+/*
+Sidebar
+*/
 #mySidebar {
   display: none;
   width: 180px;
@@ -148,7 +153,9 @@ button:hover {
   background: none;
 }
 
-/* MAIN */
+/* 
+MAIN 
+*/
 main .row {
   display: flex;
   justify-content: space-between;
