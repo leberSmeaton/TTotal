@@ -46,55 +46,31 @@ strong {
   margin-bottom: 50px;
 }
 
-/* Search */
-
+/* Search Engine */
 /* for search <form class="formHeader"> */
+
 .formHeader input {
   border: 1px solid #d8ebe4;
   border-radius: 2px;
   padding: 2px 5px;
-  transition: 1s;
-  animation-name: grow;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
 }
 
 .formHeader {
   padding: 0 40px;
 }
 
-.formHeader input:focus {
-  background-color: #fed049;
-}
-
-.formHeader input[placeholder] {
+/* ---- testing css animated search ----- */
+.formHeader input[type="text"] {
+  width: 100px;
   text-align: right;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
-
-.shrink {
-  animation-name: shrink;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes grow {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 200px;
-  }
-}
-
-@keyframes shrink {
-  from {
-    width: 400px;
-  }
-
-  to {
-    width: 100px;
-  }
+/* When the input field gets focus, change its width to 100% */
+.formHeader input[type="text"]:focus {
+  width: 80%;
+  background-color: #fed049;
+  color: #007580;
 }
 
 .fa-searchengin {
@@ -114,6 +90,7 @@ strong {
   background-color: #d8ebe4;
   position: fixed;
   z-index: 1;
+  transition: 2s;
 }
 
 .socials {

@@ -3,33 +3,12 @@
 //
 function myFunction() {
   var sidebar = document.getElementById("mySidebar");
-  if (sidebar.style.display === "none") {
-    sidebar.style.display = "block";
-  } else {
+  if (sidebar.style.display === "block") {
     sidebar.style.display = "none";
+  } else {
+    sidebar.style.display = "block";
   }
 }
-
-// 
-//////search bar
-//
-
-// var searchForm = document.querySelector('form');
-// searchForm.addEventListener('submit', function(event) {
-// event.preventDefault();
-
-// var searchInput = document.querySelector('#searchInput');
-// searchInput.classList.add('shrink');
-// var searchName = searchInput.value;
-// console.log(searchName);
-// });
-
-// var searchInput = document.querySelector('#searchInput')
-// searchInput.addEventListener('click', function () {
-//   searchInput.classList.remove('shrink')
-// })
-
-// END Search Bar
  
 // 
 //////Google Map
@@ -81,6 +60,7 @@ function initMap() {
     position: welcomeToThornbury,
     map,
     title: "Welcome to Thornbury",
+    label: "Welcome to Thornbury",
   });
 
   new google.maps.Marker({
@@ -143,6 +123,8 @@ function initMap() {
     document.getElementById("blackPearl");
   }); 
 
+  // Tried these to find page elements to no success. 
+
   // google.maps.event.addListener(label = [2], "click", (event) => {
   //   document.getElementById("welcomeToThornbury");
   // }); 
@@ -190,4 +172,28 @@ function initMap() {
   });
 }
 
-// END Google Map
+// 
+////// END Google Map
+//
+
+
+//
+////// SEARCH BAR GROW/SHRINK - Not using as it was broken on page refresh, it would open and not shrink on unfocus.
+//
+
+// var searchForm = document.querySelector('form');
+// searchForm.addEventListener('submit', function(event) {
+// event.preventDefault();
+
+// var searchInput = document.querySelector('#searchInput');
+// searchInput.classList.add('shrink');
+// var searchName = searchInput.value;
+// console.log(searchName);
+// });
+
+// var searchInput = document.querySelector('#searchInput')
+// searchInput.addEventListener('click', function () {
+//   searchInput.classList.remove('shrink')
+// })
+
+// END Search Bar
