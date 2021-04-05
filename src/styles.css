@@ -98,25 +98,14 @@ Sidebar
   transition: 2s;
 }
 
+li.sidebarTop {
+  margin-top: 50px;
+}
+
 .socials {
   position: absolute;
   bottom: 0;
-  margin-bottom: 20px;
-}
-
-header {
-  padding: 0 40px 0 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #d8ebe4;
-}
-
-.headingMain {
-  border-right: 1px solid #d8ebe4;
-  box-sizing: border-box;
-  height: 100%;
-  padding: 0 27% 0 0;
+  margin-bottom: 30px;
 }
 
 button {
@@ -153,6 +142,23 @@ button:hover {
   background: none;
 }
 
+/*
+Header
+*/
+header {
+  padding: 0 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #d8ebe4;
+}
+
+.headingMain {
+  border-right: 2px solid #d8ebe4;
+  height: 100%;
+  padding: 0 27% 0 10px;
+}
+
 /* 
 MAIN 
 */
@@ -162,7 +168,9 @@ main .row {
   padding: 70px 200px 0 200px;
 }
 
-/* Cards */
+/* 
+Cards 
+*/
 .card {
   margin: 10px 0;
   border: 1px solid #007580;
@@ -351,6 +359,87 @@ div .cardTitleHigh {
   background-repeat: no-repeat;
 }
 
+/* 
+brand cards info show on click 
+*/
+
+.popup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 1em;
+}
+
+.popuptext a {
+  font-size: 0.8em;
+  text-decoration: underline;
+  margin-top: 0;
+}
+
+.popup:hover {
+  border: 2px solid #d8ebe4;
+  border-radius: 50%;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: rgba(216, 235, 228, 0.85);
+  color: #007580;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 2px 20px 2px;
+  position: absolute;
+  z-index: 1;
+  bottom: 180%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #d8ebe4 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 /* Card Shapes */
 #circle {
   width: 110px;
@@ -504,6 +593,7 @@ footer {
   align-items: flex-end;
   margin-top: 100px;
   padding-bottom: 50px;
+  border-top: 2px solid #d8ebe4;
 }
 
 /* subscription banner */
@@ -715,9 +805,3 @@ h4 {
     flex-direction: column;
   }
 }
-
-/*@media screen and (max-width: 800px) {
-  .mySidebar {
-    flex-direction: column;
-  }
-}*/

@@ -20,6 +20,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet">
 
+  <!--Google Search Box-->
+  <script async src="https://cse.google.com/cse.js?cx=9a32cbd5363b386b3"></script>
+
   <link rel="stylesheet" href="../src/styles.css">
 </head>
 
@@ -144,15 +147,33 @@
       <h3 id=Beer>Beer</h3>
       <div class="beer">
         <div class="card sobah"></div>
-        <h4>Sobah</h4>
+        <div class="popup" onclick="mySobahFunction()">
+          <h4>Sobah</h4>
+          <span class="popuptext" id="myPopupSobah">Sobah Beverages are an Australian Aboriginal and family run company making a range of premium non-alcoholic craft beers
+          infused with native fruit and spices.
+          <a href="https://sobah.com.au/">sobah.com.au</a>
+          </span>
+        </div>
       </div>
       <div class="beer">
         <div class="card heapsnormal"></div>
-        <h4>Heaps Normal</h4>
+        <div class="popup" onclick="myHeapsFunction()">
+          <h4>Heaps Normal</h4>
+          <span class="popuptext" id="myPopupHeaps">The Heaps Normal Quiet XPA tastes like a delicious, refreshing beer. Tropical and citrus aroma with a lingering and
+          unmistakably beery finish.
+          <a href="https://heapsnormal.com/">heapsnormal.com</a>
+          </span>
+        </div>
       </div>
       <div class="beer">
         <div class="card nort"></div>
-        <h4>Nort</h4>
+        <div class="popup" onclick="myNortFunction()">
+          <h4 >Nort</h4>
+          <span class="popuptext" id="myPopupNort">Golden in colour with a fruity aroma and crisp, clean finish. NORT Refreshing Ale is a thirst quenching beer that you
+          can swim, parent, exercise, work and drive after.
+            <a href="https://nort.beer/">nort.beer</a>
+          </span>
+        </div>
       </div>
     </div><!--END beer row-->
 
@@ -160,15 +181,30 @@
       <h3 id="wine">Wine</h3>
       <div class="wine">
         <div class="card billabongred"></div>
-        <h4>Billabong Red</h4>
+        <div class="popup" onclick="myBillFunction()">
+          <h4>Billabong Red</h4>
+          <span class="popuptext" id="myPopupBill">A fuller bodied de-alcoholised red wine with light oak characters. Patritti Wines have been producing a range of fine,
+          de-alcoholised wines since 1995.</span>
+        </div>
       </div>
       <div class="wine">
         <div class="card tost"></div>
-        <h4 class="wine">TÖST</h4>
+        <div class="popup" onclick="myTostFunction()">
+          <h4 class="wine">TÖST</h4>
+          <span class="popuptext" id="myPopupTost">Tost  non-alcoholic beverages are crafted to be as meaningful and sophisticated as alcoholic
+          beverages but without the alcohol. Lower calorie, refreshingly dry and not too sweet.
+            <a href="https://tostbeverages.com/">tostbeverages.com</a>
+        </span>
+        </div>
       </div>
       <div class="wine">
         <div class="card maggiebeer"></div>
-        <h4 class="wine">Maggie Beer</h4>
+        <div class="popup" onclick="myMaggieFunction()">
+          <h4 class="wine">Maggie Beer</h4>
+          <span class="popuptext" id="myPopupMaggie">A non-alcoholic wine made from the juice of Chardonnay grapes, Maggie Beer Sparkling Chardonnay has the bead of Champagne and the mouth feel of a good wine.
+            <a href="https://shop.maggiebeer.com.au/products/sparkling-chardonnay/">maggiebeer.com.au</a>
+          </span>
+        </div>
       </div>
     </div><!--END wine row-->
 
@@ -176,15 +212,33 @@
       <h3 id="spirits">Spirits</h3>
       <div class="spirits">
         <div class="card lyresImage"></div>
-        <h4>Lyre's</h4>
+        <div class="popup" onclick="myLyreFunction()">
+          <h4>Lyre's</h4>
+          <span class="popuptext" id="myPopupLyre">This unique spirit has been impossibly crafted to capture the essence of a gently mellowed American Classic Bourbon Malt
+          with flavours that are distinct and contemporary.
+          <a href="https://lyres.com.au/">lyres.com.au</a>
+          </span>
+        </div>
       </div>
       <div class="spirits">
         <div class="card brunswickAces"></div>
-        <h4>Brunswick Aces</h4>
+        <div class="popup" onclick="myAcesFunction()">
+          <h4>Brunswick Aces</h4>
+          <span class="popuptext" id="myPopupAces">Sapiir was the first thing we perfected in our stills, an expertly crafted range of non-alcoholic, gin inspired,
+          botanical alternatives to alcohol.
+          <a href="https://brunswickaces.com/">brunswickaces.com</a>
+          </span>
+        </div>
       </div>
       <div class="spirits">
         <div class="card seedlip"></div>
-        <h4>Seedlip</h4>
+        <div class="popup" onclick="mySeedFunction()">
+          <h4>Seedlip</h4>
+          <span class="popuptext" id="myPopupSeed">The original distilled non-alcoholic spirits Seedlip Grove Taste 42 is sophisticated, bright, citrus blend of
+          Mediterranean Orange, Lemon Peel, Lemongrass and Ginger with a dry finish.
+          <a href="https://www.seedlipdrinks.com/en-us/">seedlipdrinks.com</a>
+          </span>
+        </div> 
       </div>
     </div><!--END spirit row-->
 
@@ -192,15 +246,32 @@
       <h3 id="stockists">Stockists</h3>
       <div class="stockists">
         <div class="card carwyncellars"></div>
-        <h4>Carwyn Cellars</h4>
+        <div class="popup" onclick="myCarwynFunction()">
+          <h4>Carwyn Cellars</h4>
+          <span class="popuptext" id="myPopupCarwyn">Thornbury locals for 11 years. Proud to be completely independent, and we support small
+          producers of craft beer, wine, and spirits. You'll find hard to find and
+          globally renowned cellar worthy ales.
+            <a href="https://carwyncellars.com.au/">carwyncellars.com.au</a>
+          </span>
+        </div>
       </div>
       <div class="stockists">
         <div class="card blackhearts"></div>
-        <h4>Blackhearts & Sparrows</h4>
+        <div class="popup" onclick="mySparrowsFunction()">
+          <h4>Blackhearts & Sparrows</h4>
+          <span class="popuptext" id="myPopupSparrows">Blackhearts & Sparrows started out as a home for boutique and obscure wines but has increasingly become one of the best places to unearth good beer.
+            <a href="https://www.blackheartsandsparrows.com.au/">website</a>
+          </span>
+        </div>
       </div>
       <div class="stockists">
         <div class="card mrwest"></div>
-        <h4>MR West</h4>
+        <div class="popup" onclick="myWestFunction()">
+          <h4>MR West</h4>
+          <span class="popuptext" id="myPopupWest">Both bottleshop and bar upstairs, this is truly a House of Hops & Fine Drops. Shop Craft Beer, Fine Wine and Spirits. One of the best bottle shops in Melbourne.
+            <a href="https://mrwest.com.au/">mrwest.com.au</a>
+          </span>
+        </div>
       </div>
     </div><!--END stockists-->
   </main>

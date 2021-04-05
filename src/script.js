@@ -197,3 +197,65 @@ function initMap() {
 // })
 
 // END Search Bar
+
+
+// When the user clicks on div, open the popup
+function mySobahFunction() {
+  var popup = document.getElementById("myPopupSobah");
+  popup.classList.toggle("show");
+}
+
+function myHeapsFunction() {
+  var popup = document.getElementById("myPopupHeaps");
+  popup.classList.toggle("show");
+}
+
+function myNortFunction() {
+  var popup = document.getElementById("myPopupNort");
+  popup.classList.toggle("show");
+}
+
+function myBillFunction() {
+  var popup = document.getElementById("myPopupBill");
+  popup.classList.toggle("show");
+}
+
+function myTostFunction() {
+  var popup = document.getElementById("myPopupTost");
+  popup.classList.toggle("show");
+}
+
+function myMaggieFunction() {
+  var popup = document.getElementById("myPopupMaggie");
+  popup.classList.toggle("show");
+}
+
+function myLyreFunction() {
+  var popup = document.getElementById("myPopupLyre");
+  popup.classList.toggle("show");
+}
+
+function myAcesFunction() {
+  var popup = document.getElementById("myPopupAces");
+  popup.classList.toggle("show");
+}
+
+function mySeedFunction() {
+  var popup = document.getElementById("myPopupSeed");
+  popup.classList.toggle("show");
+}
+
+function myCarwynFunction() {
+  var popup = document.getElementById("myPopupCarwyn");
+  popup.classList.toggle("show");
+}
+
+function mySparrowsFunction() {
+  var popup = document.getElementById("myPopupSparrows");
+  popup.classList.toggle("show");
+}
+
+function myWestFunction() {
+  var popup = document.getElementById("myPopupWest");
+  popup.classList.toggle("show");
+}
