@@ -4,15 +4,6 @@
 
 [https://vigilant-tereshkova-e7ec07.netlify.app/](https://vigilant-tereshkova-e7ec07.netlify.app/)
 
-### Google Form Spreadsheet
-
-https://docs.google.com/spreadsheets/d/1yef6JHe-Ft1LF0eoMNqt9wHO8GHsO9o9vvzhEbAfb0g/edit?
-usp=sharing
-
-### my script from
-
-![image of my script](info/google-sheets-script.png)
-
 ### Website Idea
 
 Totally is a website for tetotallers, people who don't drink alcohol, and those who wish to give alcohol the
