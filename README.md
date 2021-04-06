@@ -2,7 +2,7 @@
 
 ### Netlify link
 
-[https://vigilant-tereshkova-e7ec07.netlify.app/](https://vigilant-tereshkova-e7ec07.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5ba4a879-fdde-48e8-b7e6-fa084866308f/deploy-status)](https://app.netlify.com/sites/vigilant-tereshkova-e7ec07/deploys)
 
 ### Website Idea
 
